@@ -45,18 +45,6 @@ public class Calculator {
 		sixButton.setBounds(230, 230, 80, 80);
 		jf.add(sixButton);
 		
-		JButton oneButton= new JButton("1");
-		oneButton.setBounds(30, 330, 80, 80);
-		jf.add(oneButton);
-		
-		JButton twoButton= new JButton("2");
-		twoButton.setBounds(130, 330, 80, 80);
-		jf.add(twoButton);
-		
-		JButton threeButton= new JButton("3");
-		threeButton.setBounds(230, 330, 80, 80);
-		jf.add(threeButton);
-		
 		jf.setVisible(true);
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
