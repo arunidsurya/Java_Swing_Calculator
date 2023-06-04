@@ -138,7 +138,7 @@ public class Calculator implements ActionListener{
 		plusButton.setFont(new Font("Arial" ,Font.BOLD,30));
 		jf.add(plusButton);
 		
-		clearButton= new JButton("Clear");
+		clearButton= new JButton("c");
 		clearButton.setBounds(430, 430, 80, 80);
 		clearButton.addActionListener(this);
 		clearButton.setFont(new Font("Arial" ,Font.BOLD,30));

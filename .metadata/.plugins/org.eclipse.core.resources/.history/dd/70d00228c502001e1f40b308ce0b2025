@@ -7,17 +7,29 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import javax.swing.plaf.multi.MultiButtonUI;
 
 public class Calculator implements ActionListener{
 	
 	JFrame jf; //global declaration
 	JLabel displayLabel;
 	
-	JButton sevenButton,eightButton,nineButton,fourButton,fiveButton,sixButton,oneButton,twoButton,threeButton,dotButton,zeroButton;
+	JButton sevenButton;
+	JButton eightButton;
+	JButton nineButton;
+	JButton fourButton;
+	JButton fiveButton;
+	JButton sixButton;
+	JButton oneButton;
+	JButton twoButton;
+	JButton threeButton;
+	JButton dotButton;
+	JButton zeroButton;
 	
-	JButton plusButton,minusButton,multiButton,divButton,equalButton,clearButton;
-	
+	JButton plusButton;
+	JButton minusButton;
+	JButton multiButton;
+	JButton divButton;
+	JButton equalButton;
 	
 	public Calculator() {
 		jf = new JFrame("Calculator"); //frame with name on top
@@ -25,7 +37,7 @@ public class Calculator implements ActionListener{
 		jf.setSize(600,600);
 		jf.setLocation(400,150); //set default location
 		
-		displayLabel= new JLabel(); //label for display
+		displayLabel= new JLabel("Hello"); //label for display
 		displayLabel.setBounds(30, 50, 540, 40);
 		displayLabel.setBackground(Color.gray);
 		displayLabel.setOpaque(true);
@@ -138,12 +150,6 @@ public class Calculator implements ActionListener{
 		plusButton.setFont(new Font("Arial" ,Font.BOLD,30));
 		jf.add(plusButton);
 		
-		clearButton= new JButton("Clear");
-		clearButton.setBounds(430, 430, 80, 80);
-		clearButton.addActionListener(this);
-		clearButton.setFont(new Font("Arial" ,Font.BOLD,30));
-		jf.add(clearButton);
-		
 		jf.setVisible(true);
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
@@ -158,39 +164,26 @@ public class Calculator implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		
 		if(e.getSource()==sevenButton) {
-			displayLabel.setText(displayLabel.getText() +"7");
+			displayLabel.setText("7");
 		}else if(e.getSource()==eightButton) {
-			displayLabel.setText(displayLabel.getText() + "8");
+			displayLabel.setText("8");
 		}else if(e.getSource()==nineButton) {
-			displayLabel.setText(displayLabel.getText() +"9");
+			displayLabel.setText("9");
 		}else if(e.getSource()==fourButton) {
-			displayLabel.setText(displayLabel.getText() +"4");
+			displayLabel.setText("4");
 		}else if(e.getSource()==fiveButton) {
-			displayLabel.setText(displayLabel.getText() +"5");
+			displayLabel.setText("5");
 		}else if(e.getSource()==sixButton) {
-			displayLabel.setText(displayLabel.getText() +"6");
+			displayLabel.setText("6");
 		}else if(e.getSource()==oneButton) {
-			displayLabel.setText(displayLabel.getText() +"1");
+			displayLabel.setText("1");
 		}else if(e.getSource()==twoButton) {
-			displayLabel.setText(displayLabel.getText() +"2");
+			displayLabel.setText("2");
 		}else if(e.getSource()==threeButton) {
-			displayLabel.setText(displayLabel.getText() +"3");
+			displayLabel.setText("3");
 		}else if(e.getSource()==zeroButton) {
-			displayLabel.setText(displayLabel.getText() +"0");
-		}else if(e.getSource()==dotButton) {
-			displayLabel.setText(displayLabel.getText() +".");
-		}else if(e.getSource()==divButton) {
-			
-		}else if(e.getSource()==multiButton) {
-			
-		}else if(e.getSource()==minusButton) {
-			
-		}else if(e.getSource()==plusButton) {
-			
-		}else if(e.getSource()==clearButton) {
-			displayLabel.setText("");
+			displayLabel.setText("0");
 		}
-		
 		
 	}
 }
